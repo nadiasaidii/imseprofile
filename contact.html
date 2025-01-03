@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UiTM student e-profile</title>
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--chartjs-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!--bootstrap 5 icons cdn-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <style>
+#contact-section {
+    padding: 50px 0;
+}
+
+#contact-section .contact-info i {
+    font-size: 1.5rem;
+    color: #ffd700; /* Gold */
+}
+
+#contact-section .btn {
+    background-color: #6c63ff; /* Light Purple */
+    border: none;
+}
+
+#contact-section .btn:hover {
+    background-color: #4b4b9c; /* Purple */
+    color: white;
+}
+
+#contact-section .map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+    
+    <!--header-->
+    <div class="container my-4"> 
+        <div class="title">UiTM student e-profile 
+        </div>
+        </div> 
+
+    <!-- navigation -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <img src="img/logo.png" alt="UiTM logo" width="70px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faculties.html">Faculties</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="policy.html">Privacy Policy</a>
+          </li>
+
+        </ul>
+        <div class="form-check form-switch me-3 mb-lg-0">
+          <input class="form-check-input" type="checkbox" id="darkModeToggle"/>
+          <label class="form-check-label" for="darkModeToggle" id="themeLabel"> Dark Mode
+                    </label></div>
+
+                    <a href="login.html" class="nav-link ">Login</a>
+    </div>
+  </div>
+</nav>
+    
+    <!-- content -->
+    <section id="contact-section" class="contact-section">
+        <div class="container shadow">
+          <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-6 contact-info">
+              <h3>Get in Touch</h3>
+             <p><i class="fas fa-phone"></i> Phone: +603-5544 2000</p>
+              <p><i class="fas fa-map-marker-alt"></i> Address: Jalan Ilmu 1/1, 40450 Shah Alam, Selangor</p>
+
+                          <!-- Social Media Section -->
+            <div class="col-md-3">
+                <br>
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled d-flex">
+                  <li><a href="https://www.facebook.com/uitmrasmi/" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://x.com/uitmofficial?mx=2" class="text-white mx-2"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/uitm.official/" class="text-white mx-2"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+    
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+              <form id="contactForm">
+                <div class="container shadow" style="background-color: rgb(142, 11, 120); width:100%; color: white;">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Write your message here" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+              </form>
+              <div class="alert alert-success" id="successMessage" style="display: none;">
+                Your message has been successfully sent!
+              </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Embedded Map -->
+          <div class="map-container">
+            <h3>Our Location</h3>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.854929084451!2d101.49116573847916!3d3.066679693850228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4b4011c8c1b9%3A0xf7ef2e06778ed7d7!2sJalan%20Ilmu%201%2F1%2C%2040450%20Shah%20Alam%2C%20Selangor!5e0!3m2!1sen!2smy!4v1693823000000!5m2!1sen!2smy" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- About Us Section -->
+          <div class="col-md-3">
+            <h5>About Us</h5>
+            <p>The <b>UiTM Student e-Profile</b> is an innovative platform designed to help students showcase their academic journey, personal achievements, and professional aspirations. Through this portal, students can create a personalized profile, add relevant information, and maintain a digital portfolio for future academic and career opportunities.</p>
+          </div>
+          
+      
+            <!-- Quick Links Section -->
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white">Home</a></li>
+                <li><a href="profile.html" class="text-white">Profiles</a></li>
+                <li><a href="faculties.html" class="text-white">Faculties</a></li>
+                <li><a href="about.html" class="text-white">About</a></li>
+                <li><a href="contact.html" class="text-white">Contact</a></li>
+                <li><a href="policy.html" class="text-white">Privacy Policy</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Section -->
+            <div class="col-md-3">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li>Universiti Teknologi MARA (UiTM)
+                    Jalan Ilmu 1/1,
+                    40450 Shah Alam,
+                    Selangor</li>
+                <li>Phone: +603-5544 2000</li>
+              </ul>
+            </div>
+      
+            <!-- Social Media Section -->
+            <div class="col-md-3">
+              <h5>Follow Us</h5>
+              <ul class="list-unstyled d-flex">
+                <li><a href="https://www.facebook.com/uitmrasmi/" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/uitmofficial?mx=2" class="text-white mx-2"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/uitm.official/" class="text-white mx-2"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col text-center mt-3">
+              <p>&copy; 2025 UiTM Student e-Profile. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <!--bootstrap js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    <!--darkmode script-->
+<script>
+function setTheme (theme){
+document.documentElement.setAttribute("data-bs-theme", theme);
+localStorage.setItem("theme", theme);
+document.getElementById("themeLabel").innerText = theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+}
+
+document
+.getElementById("darkModeToggle")
+.addEventListener("change", function (event) {
+if (event.target.checked) {
+setTheme ("dark");
+} else {
+  setTheme("");
+}
+});
+
+window.onload = function () {
+let savedTheme = localStorage.getItem("theme");
+if(savedTheme) {
+setTheme(savedTheme);
+if (savedTheme === "dark") {
+document.getElementById("darkModeToggle").checked = true;
+}
+}};
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent form submission
+
+  const successMessage = document.getElementById('successMessage');
+  successMessage.style.display = 'block'; // Show the success message
+  
+  // Ensure it hides after 5 seconds
+  setTimeout(() => {
+    successMessage.style.display = 'none'; 
+  }, 5000);
+
+  this.reset(); // Reset the form fields
+});
+
+</script>
+
+
+
+  </body>
+</html>

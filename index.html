@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UiTM student e-profile</title>
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--chartjs-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+   <style>
+    .hero {
+  position: relative;
+  background-image: url('img/sira3.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: white; /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
+  z-index: 1;
+}
+
+.hero h1, .hero p, .hero a {
+  position: relative;
+  z-index: 2; /* Ensure text and button appear above the overlay */
+}
+
+   </style>
+    </head>
+  <body>
+    
+    <!--header-->
+    <div class="container my-4"> 
+        <div class="title">UiTM student e-profile 
+        </div>
+        </div> 
+
+    <!-- navigation -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <img src="img/logo.png" alt="UiTM logo" width="70px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faculties.html">Faculties</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="policy.html">Privacy Policy</a>
+        </li>
+
+        </ul>
+        <div class="form-check form-switch me-3 mb-lg-0">
+          <input class="form-check-input" type="checkbox" id="darkModeToggle"/>
+          <label class="form-check-label" for="darkModeToggle" id="themeLabel"> Dark Mode
+                    </label></div>
+
+                    <a href="login.html" class="nav-link ">Login</a>
+    </div>
+  </div>
+</nav>
+    
+    <!-- content -->
+
+  <br><br>
+        <div style="text-align: center;"><img src="img/logo.png" alt="logo" width="400px"/>
+        </div>
+        <br>
+<!-- Hero Section --> 
+<div class="hero">
+  <h1>Welcome to UiTM Student Profiles</h1>
+  <p>Explore, connect, and discover UiTM student achievements and information.</p>
+  <a href="profile.html" class="btn btn-light btn-lg mt-3">View Profiles</a>
+</div>
+
+
+  
+<div class="container-fluid bg-body-tertiary">
+        <div class="container">
+        <div class="row py-4">
+            <!-- Features Section -->
+    <div class="features container text-center">
+      <h2 class="mb-4">Why Choose Us?</h2> <br>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <i class="bi bi-person-circle"></i>
+                  <h4 class="mt-3">Student Profiles</h4>
+                  <p>Comprehensive information about UiTM students.</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <i class="bi bi-bar-chart"></i>
+                  <h4 class="mt-3">Academic Insights</h4>
+                  <p>Data and statistics for academic performance.</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="feature-box">
+                  <i class="bi bi-people"></i>
+                  <h4 class="mt-3">Community</h4>
+                  <p>Connect with fellow UiTM students and alumni.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+      </div>
+  </div>
+
+        </div>
+      
+        
+        <div class="col-md-10" style="padding: 5%;">
+        <h3>Research Chart</h3>
+        <h6>This is the research chart between students of Universiti Teknologi MARA</h6>
+        <p>These charts may provide you with valuable insights. You may study and evaluate the results to use it for studies and future reference!</p>
+      
+        <b>TOTAL RESEARCH:</b> 
+        <span class="badge text-bg-warning py-2 px-2"><i class="fa-solid fa-check"></i> 11,650 Research</span>
+        <span class="badge text-bg-success py-2 px-2"><i class="fa-regular fa-star"></i> 11,600 Completed</span>
+        <span class="badge text-bg-danger py-2 px-2"><i class="fa-solid fa-triangle-exclamation"></i> 50 Not Completed</span>
+        </div>       
+        </div>
+        </div>
+        
+<!--chart 1-->
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow bg-body-tertiary border-0">
+        <div class="card-body">
+
+            <canvas id="chart1"></canvas>
+            <script>
+              const chart1 = document.getElementById('chart1');
+            
+              new Chart(chart1, {
+                type: 'bar',
+                data: {
+              labels: ['FBM', 'MCMS', 'CCA', 'KPPIM', 'FSG'],
+              datasets: [{
+                label: 'GPA CHART',
+                data: [3.5, 3.8, 3.2, 3.9, 3.7],
+                borderWidth: 1,
+                stepped: true,
+              }]
+            },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+            </script>
+        </div>
+      </div>
+    </div>
+
+<!--chart 2-->
+<div class="col-md-4">
+  <div class="card shadow bg-body-tertiary border-0">
+    <div class="card-body">
+        <canvas id="chart2"></canvas>
+        <script>
+          const chart2 = document.getElementById('chart2');
+        
+          new Chart(chart2, {
+            type: 'line',
+            data: {
+              labels: ['FBM', 'MCMS', 'CCA', 'KPPIM', 'FSG'],
+              datasets: [{
+                label: 'STUDY HOURS',
+                data: [2, 1.5, 1.5, 3, 4],
+                borderWidth: 1,
+                stepped: true,
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+  </div>
+</div>
+</div>
+
+
+<!--chart 3-->
+<div class="col-md-4">
+  <div class="card shadow bg-body-tertiary border-0">
+    <div class="card-body">
+        <canvas id="chart3"></canvas>
+        <script>
+          const chart3 = document.getElementById('chart3');
+        
+          new Chart(chart3, {
+            type: 'pie',
+            data: {
+              labels: ['PHD', 'MASTER', 'DEGREE', 'DIPLOMA'],
+              datasets: [{
+                label: 'LEVELS OF STUDY',
+                data: [1005, 3000, 3500, 4230],
+                borderWidth: 1,
+                stepped: true,
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!--container-->
+<br><br>
+<div class="container">
+  <h3><i class="fa-regular fa-folder"></i> Research Data</h3>
+  
+  
+  <div class="row my-3">
+  <div class="col-md-4 mb-4">
+  <div class="card bg-body-tertiary border-0 shadow">
+  <div class="card-body justify">
+  <h6 class="my-3"><i class="fa-regular fa-folder-open"></i> CHART 1 (GPA CHART)</h6>
+  <p>This bar chart displays the average GPA for five different departments: FBM, MCMS, CCA, KPPIM, and FSG. The GPAs range from 3.2 to 3.9, with KPPIM having the highest GPA (3.9) and CCA having the lowest (3.2). This suggests that, on average, students in KPPIM perform better academically compared to those in CCA, while the other departments (FBM, MCMS, FSG) fall in between.</p><p>
+    This Chart consists of 25% of UiTM Students.
+  </p>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+  </div>
+
+    <div class="text-end mt-3">
+      <button type="button" class="btn btn-primary btn-sm"><i class="fa-regular fa-folder"></i></button>
+<button type="button" class="btn btn-warning btn-sm"><i class="fa-solid fa-triangle-exclamation"></i></button>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card bg-body-tertiary border-0 shadow">
+    <div class="card-body justify">
+    <h6 class="my-3"><i class="fa-regular fa-folder-open"></i> CHART 2 (STUDY HOURS CHART)</h6>
+    <p>This line chart shows the number of study hours per week for the same five departments. The study hours range from 1.5 hours (MCMS and CCA) to 4 hours (FSG). FSG students spend the most time studying, while MCMS and CCA students spend the least amount of time studying. This data suggests that there may be a correlation between study hours and academic performance, particularly for FSG students.</p><p>
+      This Chart consists of 35% of UiTM Students.
+    </p>
+    <div class="progress">
+      <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+    </div>
+  
+      <div class="text-end mt-3">
+        <button type="button" class="btn btn-primary btn-sm"><i class="fa-regular fa-folder"></i></button>
+  <button type="button" class="btn btn-warning btn-sm"><i class="fa-solid fa-triangle-exclamation"></i></button>
+      </div>
+  
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-body-tertiary border-0 shadow">
+      <div class="card-body justify">
+      <h6 class="my-3"><i class="fa-regular fa-folder-open"></i> CHART 3 (LEVELS OF STUDY CHART)</h6>
+      <p>This pie chart represents the distribution of students across different levels of study (PhD, Master’s, Degree, and Diploma). Degree-level students form the largest group with 3,500 students, followed by Diploma students (4,230). Master’s and PhD students are less prevalent, with 3,000 and 1,005 students, respectively. This indicates that the majority of students are pursuing undergraduate degrees or diplomas.</p><p>
+        This Chart consists of 55% of UiTM Students.
+      </p>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+      </div>
+    
+        <div class="text-end mt-3">
+          <button type="button" class="btn btn-primary btn-sm"><i class="fa-regular fa-folder"></i></button>
+    <button type="button" class="btn btn-warning btn-sm"><i class="fa-solid fa-triangle-exclamation"></i></button>
+        </div>
+    
+      </div>
+      </div>
+      </div>
+
+     
+        </div>
+
+  </div>
+
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- About Us Section -->
+          <div class="col-md-3">
+            <h5>About Us</h5>
+            <p>The <b>UiTM Student e-Profile</b> is an innovative platform designed to help students showcase their academic journey, personal achievements, and professional aspirations. Through this portal, students can create a personalized profile, add relevant information, and maintain a digital portfolio for future academic and career opportunities.</p>
+          </div>
+          
+    
+            <!-- Quick Links Section -->
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white">Home</a></li>
+                <li><a href="profile.html" class="text-white">Profiles</a></li>
+                <li><a href="faculties.html" class="text-white">Faculties</a></li>
+                <li><a href="about.html" class="text-white">About</a></li>
+                <li><a href="contact.html" class="text-white">Contact</a></li>
+                <li><a href="policy.html" class="text-white">Privacy Policy</a></li>
+              </ul>
+            </div>
+            
+          <!-- Contact Section -->
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li>Universiti Teknologi MARA (UiTM)
+                  Jalan Ilmu 1/1,
+                  40450 Shah Alam,
+                  Selangor</li>
+              <li>Phone: +603-5544 2000</li>
+            </ul>
+          </div>
+    
+          <!-- Social Media Section -->
+          <div class="col-md-3">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled d-flex">
+              <li><a href="https://www.facebook.com/uitmrasmi/" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://x.com/uitmofficial?mx=2" class="text-white mx-2"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/uitm.official/" class="text-white mx-2"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col text-center mt-3">
+            <p>&copy; 2025 UiTM Student e-Profile. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!--bootstrap js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--darkmode script-->
+<script>
+function setTheme (theme){
+document.documentElement.setAttribute("data-bs-theme", theme);
+localStorage.setItem("theme", theme);
+document.getElementById("themeLabel").innerText = theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+}
+
+document
+.getElementById("darkModeToggle")
+.addEventListener("change", function (event) {
+if (event.target.checked) {
+setTheme ("dark");
+} else {
+  setTheme("");
+}
+});
+
+window.onload = function () {
+let savedTheme = localStorage.getItem("theme");
+if(savedTheme) {
+setTheme(savedTheme);
+if (savedTheme === "dark") {
+document.getElementById("darkModeToggle").checked = true;
+}
+}
+};
+</script>
+
+
+
+  </body>
+</html>
+
+<!-- Test -->

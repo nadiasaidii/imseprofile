@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UiTM student e-profile</title>
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--chartjs-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!--bootstrap 5 icons cdn-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <style>
+ body {
+      font-family: Poppins, sans-serif;
+      min-height: 150%;
+    }
+    .page-header {
+      background: linear-gradient(45deg, #4b0082, #800080);
+      padding: 50px 0;
+      text-align: center;
+      color: #fff;
+    }
+    .faculty-card {
+      background-color: #2e003e;
+      border: none;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .faculty-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+    .faculty-card .card-body {
+      background-color: #b58ed1;
+      border-radius: 0 0 10px 10px;
+    }
+    .faculty-card h5 {
+      color: #fff;
+    }
+    .learn-more-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .learn-more-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+
+</style>
+</head>
+
+<body>
+    
+    <!--header-->
+    <div class="container my-4"> 
+        <div class="title">UiTM student e-profile 
+        </div>
+        </div> 
+
+    <!-- navigation -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <img src="img/logo.png" alt="UiTM logo" width="70px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faculties.html">Faculties</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="policy.html">Privacy Policy</a>
+          </li>
+
+        </ul>
+        <div class="form-check form-switch me-3 mb-lg-0">
+          <input class="form-check-input" type="checkbox" id="darkModeToggle"/>
+          <label class="form-check-label" for="darkModeToggle" id="themeLabel"> Dark Mode
+                    </label></div>
+
+                    <a href="login.html" class="nav-link ">Login</a>
+    </div>
+  </div>
+</nav>
+    
+    <!-- content -->
+    <header class="page-header">
+        <h1>UiTM Faculties</h1>
+        <p>Discover the diverse faculties of Universiti Teknologi MARA (UiTM).</p>
+      </header>
+    
+      <div class="container">
+        <div class="row">
+    
+          <!-- Faculty of Communication and Media Studies -->
+          <div class="col-md-6">
+            <div class="card faculty-card">
+              <img src="img/massc.jpg" class="card-img-top" alt="Faculty of Communication">
+              <div class="card-body">
+                <h5 class="card-title">Faculty of Communication and Media Studies</h5>
+                <p class="card-text">This faculty offers programs designed to equip students with critical skills in communication, journalism, and media studies, preparing them for dynamic careers in the media industry.</p>
+                <a href="https://masscomm.uitm.edu.my/" class="btn btn-primary learn-more-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- College of Creative Arts -->
+          <div class="col-md-6">
+            <div class="card faculty-card">
+              <img src="img/cca.jpeg" class="card-img-top" alt="Creative Arts">
+              <div class="card-body">
+                <h5 class="card-title">College of Creative Arts</h5>
+                <p class="card-text">Known for fostering creativity, this faculty provides students with the skills and knowledge needed in the fields of fine arts, design, and performing arts.</p>
+                <a href="https://kpsk.uitm.edu.my/" class="btn btn-primary learn-more-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- College of Computing, Informatics and Mathematics-->
+          <div class="col-md-6">
+            <div class="card faculty-card">
+              <img src="img/kppim.jpg" class="card-img-top" alt="Computing and Mathematics">
+              <div class="card-body">
+                <h5 class="card-title">College of Computing, Informatics and Mathematics</h5>
+                <p class="card-text">This faculty offers a robust curriculum in computer science, informatics, and mathematics, aimed at producing skilled professionals for the tech-driven world.</p>
+                <a href="https://kppim.uitm.edu.my/" class="btn btn-primary learn-more-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Faculty of Business and Management -->
+          <div class="col-md-6">
+            <div class="card faculty-card">
+              <img src="img/fbm.jpeg" class="card-img-top" alt="Business and Management">
+              <div class="card-body">
+                <h5 class="card-title">Faculty of Business and Management</h5>
+                <p class="card-text">With a focus on business excellence, this faculty prepares students to lead and innovate in various business sectors globally.</p>
+                <a href="https://fbm.uitm.edu.my/" class="btn btn-primary learn-more-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Faculty of Applied Sciences -->
+          <div class="col-md-6">
+            <div class="card faculty-card">
+              <img src="img/fsg.jpeg" class="card-img-top" alt="Applied Sciences">
+              <div class="card-body">
+                <h5 class="card-title">Faculty of Applied Sciences</h5>
+                <p class="card-text">This faculty provides education and research opportunities in applied sciences, fostering innovation and practical solutions to real-world problems.</p>
+              <a href="https://fsg.uitm.edu.my/" class="btn btn-primary learn-more-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- About Us Section -->
+          <div class="col-md-3">
+            <h5>About Us</h5>
+            <p>The <b>UiTM Student e-Profile</b> is an innovative platform designed to help students showcase their academic journey, personal achievements, and professional aspirations. Through this portal, students can create a personalized profile, add relevant information, and maintain a digital portfolio for future academic and career opportunities.</p>
+          </div>
+          
+            <!-- Quick Links Section -->
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white">Home</a></li>
+                <li><a href="profile.html" class="text-white">Profiles</a></li>
+                <li><a href="faculties.html" class="text-white">Faculties</a></li>
+                <li><a href="about.html" class="text-white">About</a></li>
+                <li><a href="contact.html" class="text-white">Contact</a></li>
+                <li><a href="policy.html" class="text-white">Privacy Policy</a></li>
+              </ul>
+            </div>
+        
+            <!-- Contact Section -->
+            <div class="col-md-3">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li>Universiti Teknologi MARA (UiTM)
+                    Jalan Ilmu 1/1,
+                    40450 Shah Alam,
+                    Selangor</li>
+                <li>Phone: +603-5544 2000</li>
+              </ul>
+            </div>
+      
+            <!-- Social Media Section -->
+            <div class="col-md-3">
+              <h5>Follow Us</h5>
+              <ul class="list-unstyled d-flex">
+                <li><a href="https://www.facebook.com/uitmrasmi/" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/uitmofficial?mx=2" class="text-white mx-2"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/uitm.official/" class="text-white mx-2"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col text-center mt-3">
+              <p>&copy; 2025 UiTM Student e-Profile. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <!--bootstrap js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    <!--darkmode script-->
+<script>
+function setTheme (theme){
+document.documentElement.setAttribute("data-bs-theme", theme);
+localStorage.setItem("theme", theme);
+document.getElementById("themeLabel").innerText = theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+}
+
+document
+.getElementById("darkModeToggle")
+.addEventListener("change", function (event) {
+if (event.target.checked) {
+setTheme ("dark");
+} else {
+  setTheme("");
+}
+});
+
+window.onload = function () {
+let savedTheme = localStorage.getItem("theme");
+if(savedTheme) {
+setTheme(savedTheme);
+if (savedTheme === "dark") {
+document.getElementById("darkModeToggle").checked = true;
+}
+}
+};
+</script>
+
+
+
+  </body>
+</html>

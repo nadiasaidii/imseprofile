@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UiTM student e-profile</title>
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--chartjs-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!--bootstrap 5 icons cdn-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .about-section {
+      padding: 50px 0;
+      background-color: #f1f1f1;
+    }
+
+    .about-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    .feature-card {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+
+</style>
+</head>
+
+<body>
+    
+    <!--header-->
+    <div class="container my-4"> 
+        <div class="title">UiTM student e-profile 
+        </div>
+        </div> 
+
+    <!-- navigation -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <img src="img/logo.png" alt="UiTM logo" width="70px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faculties.html">Faculties</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="policy.html">Privacy Policy</a>
+          </li>
+
+        </ul>
+        <div class="form-check form-switch me-3 mb-lg-0">
+          <input class="form-check-input" type="checkbox" id="darkModeToggle"/>
+          <label class="form-check-label" for="darkModeToggle" id="themeLabel"> Dark Mode
+                    </label></div>
+
+                    <a href="login.html" class="nav-link ">Login</a>
+    </div>
+  </div>
+</nav>
+    
+    <!-- content -->
+   <!-- About Header Section with Background Image -->
+   <section class="about-header">
+    <div class="container">
+      <h2 class="about-title">About UiTM Student e-Profile</h2>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="about-text">The <b>UiTM Student e-Profile</b> is an innovative platform designed to help students showcase their academic journey, personal achievements, and professional aspirations. Through this portal, students can create a personalized profile, add relevant information, and maintain a digital portfolio for future academic and career opportunities.</p>
+        </div>
+        <div class="col-md-6">
+          <p class="about-text">Whether you are a prospective student, a current student, or an alumni, the e-Profile system is designed to help you manage your academic information effectively. This platform helps students stand out by providing a digital version of their profile, which can be shared with potential employers, faculty, and universities across the globe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="container">
+    <div class="row objectives-section">
+      <div class="col-md-12">
+        <h3>Vision</h3>
+        <p class="about-text">To create a comprehensive and accessible digital platform where UiTM students can manage their academic, personal, and professional profiles, ensuring easy access to potential opportunities and making their achievements visible to the global community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="container">
+    <div class="row objectives-section">
+      <div class="col-md-12">
+        <h3>Mission</h3>
+        <p class="about-text">To provide UiTM students with a user-friendly, secure, and reliable platform that allows them to build and maintain their academic and professional profiles, while offering tools for managing their educational and career goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectives Section -->
+  <section class="container">
+    <div class="row objectives-section">
+      <div class="col-md-12">
+        <h3>Objectives</h3>
+        <ul class="list-unstyled">
+          <li><strong>1. Profile Management:</strong> Allow students to create and manage a comprehensive digital profile that highlights their academic, extracurricular, and personal achievements.</li>
+          <li><strong>2. Accessibility and Connectivity:</strong> Ensure students have easy access to their profiles anytime, anywhere, fostering a sense of connectivity across institutions and employers.</li>
+          <li><strong>3. Career Readiness:</strong> Equip students with a digital portfolio that can be shared with employers, faculty, and other professionals to enhance career opportunities and academic growth.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container">
+    <h2 class="about-title">Features of UiTM Student e-Profile</h2>
+    <div class="row">
+      <!-- Feature 1 -->
+      <div class="col-md-4">
+        <div class="card feature-card">
+          <h5 class="card-title">Student Profiles</h5>
+          <p class="card-text">Create and manage your personalized student profile with your academic achievements, extracurricular activities, and personal details.</p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="col-md-4">
+        <div class="card feature-card">
+          <h5 class="card-title">Easy to Access</h5>
+          <p class="card-text">Access your profile from anywhere and anytime using the platform, ensuring convenience for students and faculty alike.</p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="col-md-4">
+        <div class="card feature-card">
+          <h5 class="card-title">Secure & Confidential</h5>
+          <p class="card-text">Your data is stored securely and can be accessed only by you and authorized personnel, keeping your academic information private.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <!-- About Us Section -->
+            <div class="col-md-3">
+              <h5>About Us</h5>
+              <p>The <b>UiTM Student e-Profile</b> is an innovative platform designed to help students showcase their academic journey, personal achievements, and professional aspirations. Through this portal, students can create a personalized profile, add relevant information, and maintain a digital portfolio for future academic and career opportunities.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white">Home</a></li>
+                <li><a href="profile.html" class="text-white">Profiles</a></li>
+                <li><a href="faculties.html" class="text-white">Faculties</a></li>
+                <li><a href="about.html" class="text-white">About</a></li>
+                <li><a href="contact.html" class="text-white">Contact</a></li>
+                <li><a href="policy.html" class="text-white">Privacy Policy</a></li>
+              </ul>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="col-md-3">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li>Universiti Teknologi MARA (UiTM)
+                    Jalan Ilmu 1/1,
+                    40450 Shah Alam,
+                    Selangor</li>
+                <li>Phone: +603-5544 2000</li>
+              </ul>
+            </div>
+      
+            <!-- Social Media Section -->
+            <div class="col-md-3">
+              <h5>Follow Us</h5>
+              <ul class="list-unstyled d-flex">
+                <li><a href="https://www.facebook.com/uitmrasmi/" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/uitmofficial?mx=2" class="text-white mx-2"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/uitm.official/" class="text-white mx-2"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col text-center mt-3">
+              <p>&copy; 2025 UiTM Student e-Profile. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <!--bootstrap js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    <!--darkmode script-->
+<script>
+function setTheme (theme){
+document.documentElement.setAttribute("data-bs-theme", theme);
+localStorage.setItem("theme", theme);
+document.getElementById("themeLabel").innerText = theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+}
+
+document
+.getElementById("darkModeToggle")
+.addEventListener("change", function (event) {
+if (event.target.checked) {
+setTheme ("dark");
+} else {
+  setTheme("");
+}
+});
+
+window.onload = function () {
+let savedTheme = localStorage.getItem("theme");
+if(savedTheme) {
+setTheme(savedTheme);
+if (savedTheme === "dark") {
+document.getElementById("darkModeToggle").checked = true;
+}
+}
+};
+</script>
+
+
+
+  </body>
+</html>
